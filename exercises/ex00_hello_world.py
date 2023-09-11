@@ -2,4 +2,4 @@
 
 print("Hello, world.")
 
-_author_="730668496"
+__author__ = "730668496"
