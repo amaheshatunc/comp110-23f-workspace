@@ -42,6 +42,3 @@ elif match_counter == 1:
     print(str(match_counter) + " instance of " + character_input + " found in " + word_input)
 else:
     print("No instances of " + character_input + " foudn in " + word_input)
-
-
-
