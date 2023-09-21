@@ -1,4 +1,4 @@
-"""EX02 - Wordle that expects you to get it in one try"""
+"""EX02 - Wordle that expects you to get it in one try."""
 
 __author__ = "730668496"
 word = "python"
