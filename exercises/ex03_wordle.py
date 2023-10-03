@@ -13,7 +13,7 @@ def contains_char(search_string: str, single_char: str) -> bool:
 
 
 def emojified(guess: str, secret_guess: str) -> str:
-    """functions returns emojis depending if they wrong, right or close to the correct answer"""
+    """Functions returns emojis depending if they wrong, right or close to the correct answer."""
     assert len(guess) == len(secret_guess)
     white_box: str = "\U00002B1C"
     green_box: str = "\U0001F7E9"
