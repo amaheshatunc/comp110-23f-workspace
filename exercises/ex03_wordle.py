@@ -37,7 +37,7 @@ def input_guess(expected_length: int) -> str:
 
 def main() -> None:
     """This function allows for the game to be played, tracks the user input and prompts the user to play for a few more turns before the game stops."""
-    secret_word: str = "python"
+    secret_word: str = "codes"
     counter = 1
     win = False
     while counter < 7 and win is False:
