@@ -1,5 +1,6 @@
 __author__ = "730668496"
 
+
 def contains_char(search_string: str, single_char: str) -> bool:
     assert len(single_char) == 1
     index: int = 0
@@ -9,6 +10,7 @@ def contains_char(search_string: str, single_char: str) -> bool:
             return True
         index += 1
     return False
+
 
 def emojified(guess: str, secret_guess: str) -> str:
     """functions returns emojis depending if they wrong, right or close to the correct answer"""
@@ -28,12 +30,14 @@ def emojified(guess: str, secret_guess: str) -> str:
         index += 1
     return empty_str
 
+
 def input_guess(expected_length: int) -> str:
     """Function makes user input his guess to see if they are right or wrong."""
     guess_word: str = input(f"Enter a {expected_length} character word: ")
     while expected_length != len(guess_word):
         guess_word = input(f"That wasn't {expected_length} chars! Try again: ")
     return guess_word
+
 
 def main() -> None:
     """This function allows for the game to be played, tracks the user input and prompts the user to play for a few more turns before the game stops."""
@@ -53,6 +57,6 @@ def main() -> None:
     else: 
         print("X/6 - Sorry, try again tomorrow ")
 
+
 if __name__ == "__main__":
     main()
-
