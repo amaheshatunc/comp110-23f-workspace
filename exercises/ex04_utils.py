@@ -18,6 +18,7 @@ def all(numbers: list[int], find: int) -> bool:
 
 
 def max(input_list: list[int]) -> int:
+    """This function returns the maximum number in a list."""
     if len(input_list) == 0:
         raise ValueError("max() arg is an empty List")
     
@@ -35,6 +36,7 @@ def max(input_list: list[int]) -> int:
 
 
 def is_equal(list_one: list[int], list_two: list[int]) -> bool:
+    """This function will check if two lists are equal."""
     if len(list_one) != len(list_two):
         return False
     else:
