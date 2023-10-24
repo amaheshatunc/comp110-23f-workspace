@@ -1,7 +1,6 @@
 """Enjoying the wonders of wordle."""
 from turtle import Turtle, colormode, done, setup
 import random
-from turtle import *
 __author__ = "730668496"
 colormode(255)
 """This code right here was to make the size window be setup to a certain number of pixels."""
@@ -30,13 +29,13 @@ def main() -> None:
     # The ocean.
     rectangle(700, 220, 79, 66, 181)
     # The beach scene.
-    leo.goto(-350,-330)
+    leo.goto(-350, -330)
     leo.pendown()
     rectangle(700, 100, 225, 191, 146)
-    leo.goto(-350,-250)
+    leo.goto(-350, -250)
     rectangle(300, 50, 225, 191, 146)
     leo.left(270)
-    leo.goto(-50,-200)
+    leo.goto(-50, -200)
     triangle(35, 225, 191, 146)
     # The clouds.
     """The following few lines is displaying how to randomly display clouds across the map."""
@@ -56,14 +55,14 @@ def main() -> None:
     # The ship.
     leo.penup()
     leo.setheading(0)
-    trapezoid(-100,-110)
+    trapezoid(-100, -110)
     leo.penup()
-    leo.goto(-80,-110)
+    leo.goto(-80, -110)
     leo.setheading(0)
     leo.pendown()
     rectangle(10, 70, 255, 255, 255)
     leo.penup()
-    leo.goto(-100,-60)
+    leo.goto(-100, -60)
     leo.pendown()
     triangle(30, 255, 0, 0)
     done()
@@ -131,22 +130,22 @@ def coconut(x: float, y: float) -> None:
     leo.pendown()
     circle(101, 67, 33, 20)
     leo.penup()
-    leo.goto(x,y + 26)
+    leo.goto(x, y + 26)
     leo.pendown()
     circle(0, 0, 0, 3)
     leo.penup()
-    leo.goto(x + 6,y + 18)
+    leo.goto(x + 6, y + 18)
     leo.pendown()
     circle(0, 0, 0, 3)
     leo.penup()
-    leo.goto(x - 6,y + 18)
+    leo.goto(x - 6, y + 18)
     leo.pendown()
     circle(0, 0, 0, 3)
 
 
 def trapezoid(x: float, y: float) -> None: 
     """In this function I am trying to make a trapezoid which can be spawned in anywhere in the world where I call it without using a special formula."""
-    leo.goto(x,y)
+    leo.goto(x, y)
     leo.pendown()
     rectangle(46, 30, 255, 255, 255)
     leo.setheading(90)
