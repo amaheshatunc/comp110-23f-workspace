@@ -68,6 +68,7 @@ def main() -> None:
     triangle(30, 255, 0, 0)
     done()
 
+
 def rectangle(width: float, height: float, color_one: float, color_two: float, color_three: float) -> None:
     """Rectangle Function."""
     leo.begin_fill()
@@ -82,6 +83,7 @@ def rectangle(width: float, height: float, color_one: float, color_two: float, c
         i = i + 1
     leo.end_fill()
 
+
 def triangle(side: float, color_one: float, color_two: float, color_three: float) -> None:
     """Triangle Function."""
     leo.begin_fill()
@@ -94,6 +96,7 @@ def triangle(side: float, color_one: float, color_two: float, color_three: float
     leo.forward(side * 1.414)
     leo.end_fill()
     
+
 def circle(color_one: float, color_two: float, color_three: float, radius: float) -> None:
     """Circle Function."""
     leo.begin_fill()
@@ -102,6 +105,7 @@ def circle(color_one: float, color_two: float, color_three: float, radius: float
     leo.pencolor(color_one, color_two, color_three)
     leo.circle(radius)
     leo.end_fill()
+
 
 def clouds(radius: float) -> None:
     """In this function I am trying to make a clouds which can be spawned in anywhere in the world and it can be randomized across the map in a certain area (This can be seen the main function)."""
@@ -120,6 +124,7 @@ def clouds(radius: float) -> None:
         i = i + 1
     leo.end_fill()
 
+
 def coconut(x: float, y: float) -> None:
     """In this function I am trying to make a coconuts which can be spawned in anywhere in the world where I call it without using a special formula."""
     leo.goto(x, y)
@@ -137,6 +142,7 @@ def coconut(x: float, y: float) -> None:
     leo.goto(x - 6,y + 18)
     leo.pendown()
     circle(0, 0, 0, 3)
+
 
 def trapezoid(x: float, y: float) -> None: 
     """In this function I am trying to make a trapezoid which can be spawned in anywhere in the world where I call it without using a special formula."""
