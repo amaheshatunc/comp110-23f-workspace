@@ -10,8 +10,3 @@ def zip(strings: list[str], numbers: list[int]) -> dict[str, int]:
     for i in range(0, len(strings)):
         dictionary_extra[strings[i]] = numbers[i]
     return dictionary_extra
-
-"""
-
-print("3")
-"""
