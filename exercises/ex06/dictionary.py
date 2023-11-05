@@ -1,5 +1,5 @@
-__author__ = 730668496
 """Making a beautiful dictionary in this dictionaryless world."""
+__author__ = 730668496
 
 
 def invert(inp_dict: dict[str, str]) -> dict[str, str]:
@@ -18,7 +18,7 @@ def invert(inp_dict: dict[str, str]) -> dict[str, str]:
         repeat = 0
 
     """Raises the KeyError."""
-    if key_wrong == True: 
+    if key_wrong is True: 
         raise KeyError("Too many same keys in dictionaries, change them.")
 
     blank_dict: dict[str, str] = {}
@@ -58,10 +58,24 @@ def count(word_list: list[str]) -> dict[str, int]:
     return blank_dict
 
 
-def update_attendance(dictionary: dict[str, int], day: str, people: str) -> dict[str, list[str]]:
+def alphabetizer(list1: list[str]) -> dict[str, list[str]]:
+    """Check the first letter of the words and check with everything else."""
+    new_dict: dict[str, list[str]] = {}
+    blank_list: list[str] = []
+    for word in list1: 
+        first_letter = word[0]
+        blank_list.append(word)
+        if first_letter in list1:
+            new_dict[first_letter].append(blank_list)
+        else: 
+            new_dict[first_letter] = [word]
+    return new_dict
+
+
+def update_attendance(dictionary: dict[str, list[str]], day: str, people: str) -> dict[str, list[str]]:
     """Changes the dictionary to check if student was marked as present on the attendance log."""
     if day in dictionary:
-        dictionary[day.append(people)]
+        dictionary[day].append(people)
     else:
         dictionary[day] = [people]
     return dictionary
