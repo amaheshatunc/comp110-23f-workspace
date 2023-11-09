@@ -4,7 +4,7 @@
 # import the class
 # from <file_name>.<module_name> import <class_name>
 """THIS LINE DOES NOT WORK FOR SOME REASON ASK TA'S OR PROFFESSOR WHEN YOU HAVE TIME."""
-from pizza import Pizza
+from lessons.classes.pizza import Pizza
 
 
 my_pizza: Pizza = Pizza("large", 12, True) # Constructor

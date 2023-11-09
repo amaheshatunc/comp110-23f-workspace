@@ -75,7 +75,8 @@ def alphabetizer(list1: list[str]) -> dict[str, list[str]]:
 def update_attendance(dictionary: dict[str, list[str]], day: str, people: str) -> dict[str, list[str]]:
     """Changes the dictionary to check if student was marked as present on the attendance log."""
     if day in dictionary:
-        dictionary[day].append(people)
+        if people not in dictionary[day]:
+            dictionary[day].append(people)
     else:
         dictionary[day] = [people]
     return dictionary
