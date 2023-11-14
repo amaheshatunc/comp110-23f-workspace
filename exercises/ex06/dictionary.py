@@ -61,12 +61,10 @@ def count(word_list: list[str]) -> dict[str, int]:
 def alphabetizer(list1: list[str]) -> dict[str, list[str]]:
     """Check the first letter of the words and check with everything else."""
     new_dict: dict[str, list[str]] = {}
-    blank_list: list[str] = []
     for word in list1: 
-        first_letter = word[0]
-        blank_list.append(word)
-        if first_letter in list1:
-            new_dict[first_letter].append(blank_list)
+        first_letter = word[0].lower()
+        if first_letter in new_dict:
+            new_dict[first_letter].append(word)
         else: 
             new_dict[first_letter] = [word]
     return new_dict
